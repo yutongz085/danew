@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天津大牛国际贸易有限公司 | TIANJIN DANEW International Trade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .lang-en { display: none; }
+        .active-lang-en .lang-en { display: block; }
+        .active-lang-en .lang-zh { display: none; }
+        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .product-card { transition: all 0.3s ease; }
+        .product-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+        .product-img { width: 100%; height: 100%; object-fit: cover; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 transition-colors duration-300">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-blue-900">
+                        <span class="lang-zh">天津大牛国际贸易</span>
+                        <span class="lang-en">TIANJIN DANEW</span>
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="hover:text-blue-600 font-medium"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a>
+                    <a href="#about" class="hover:text-blue-600 font-medium"><span class="lang-zh">关于我们</span><span class="lang-en">About</span></a>
+                    <a href="#products" class="hover:text-blue-600 font-medium"><span class="lang-zh">产品中心</span><span class="lang-en">Products</span></a>
+                    <a href="#contact" class="hover:text-blue-600 font-medium"><span class="lang-zh">联系我们</span><span class="lang-en">Contact</span></a>
+                    <button onclick="toggleLang()" class="bg-blue-900 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-800 transition shadow-md">
+                        <span class="lang-zh">English</span>
+                        <span class="lang-en">中文</span>
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleLang()" class="mr-4 text-sm font-bold text-blue-900 border border-blue-900 px-2 py-1 rounded">EN/中</button>
+                    <i class="fa-solid fa-bars text-2xl cursor-pointer text-blue-900"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-slate-900">
+        <div class="absolute inset-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1920&q=80" alt="Industrial Background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight">
+                <span class="lang-zh">连接中国优质工业，服务全球贸易需求</span>
+                <span class="lang-en">Bridging Quality Industry, Serving Global Trade</span>
+            </h1>
+            <p class="text-xl text-blue-100 mb-10 max-w-3xl mx-auto font-light">
+                <span class="lang-zh">天津大牛国际贸易有限公司——深耕工业配套、精密机械与科技运动领域。</span>
+                <span class="lang-en">Tianjin DANEW - Expert in Industrial Support, Precision Machinery, Tech & Sports.</span>
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#products" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-500 transition shadow-lg">
+                    <span class="lang-zh">产品中心</span><span class="lang-en">Products</span>
+                </a>
+                <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-slate-900 transition">
+                    <span class="lang-zh">联系我们</span><span class="lang-en">Contact Us</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-bold mb-4">
+                        <span class="lang-zh">企业简介</span><span class="lang-en">COMPANY PROFILE</span>
+                    </div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-8">
+                        <span class="lang-zh">天津大牛国际贸易有限公司</span>
+                        <span class="lang-en">Tianjin DA NEW Int'l Trade</span>
+                    </h2>
+                    <div class="text-gray-600 leading-relaxed space-y-6 text-lg">
+                        <p class="lang-zh">我们坐落于天津，是一家拥有多元化产品线的专业外贸公司。公司依托中国强大的制造业供应链，为全球客户提供从重型矿山配件、工业钢材到精密数控机床的高端贸易服务。</p>
+                        <p class="lang-en">Located in Tianjin, we are a professional trade company with a diversified product line. Leveraging China's robust manufacturing supply chain, we provide premium trading services ranging from heavy mining parts and industrial steel to precision CNC machine tools.</p>
+                        <p class="lang-zh">同时，我们在电子科技（SDR开发）及专业体育器材领域也具备深厚的供应能力。大牛贸易，始终坚持质量第一，诚信共赢。</p>
+                        <p class="lang-en">Furthermore, we possess deep supply capabilities in electronic technology (SDR development) and professional sports equipment. DANEW Trade always adheres to quality first and integrity-based win-win cooperation.</p>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 relative">
+                    <div class="absolute -inset-4 bg-blue-100 rounded-2xl transform rotate-3"></div>
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Quality Control" class="relative rounded-2xl shadow-2xl w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold text-gray-900">
+                    <span class="lang-zh">核心产品线</span>
+                    <span class="lang-en">Core Product Lines</span>
+                </h2>
+                <div class="w-24 h-1.5 bg-blue-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <!-- Category: Heavy Industry -->
+            <div class="mb-20">
+                <div class="flex items-center mb-10 border-l-8 border-blue-900 pl-6">
+                    <h3 class="text-3xl font-black text-blue-900">
+                        <span class="lang-zh">01 矿山与重工业</span><span class="lang-en">01 Mining & Heavy Industry</span>
+                    </h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Item 1: Engine -->
+                    <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="h-56 bg-gray-200">
+                            <img src="21.jpg" alt="Engine" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1597766354181-432244199859?auto=format&fit=crop&w=500&q=80'">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl mb-2"><span class="lang-zh">矿车用发动机</span><span class="lang-en">Mining Truck Engines</span></h4>
+                            <p class="text-gray-500 text-sm"><span class="lang-zh">提供卓越动力，适配多种大型矿山车辆。</span><span class="lang-en">Superior power for large-scale mining vehicles.</span></p>
+                        </div>
+                    </div>
+                    <!-- Item 2: Rims -->
+                    <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="h-56 bg-gray-200">
+                            <img src="22.jpg" alt="Steel Rims" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=500&q=80'">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl mb-2"><span class="lang-zh">矿车钢圈</span><span class="lang-en">Mining Truck Rims</span></h4>
+                            <p class="text-gray-500 text-sm"><span class="lang-zh">高强度特种钢圈，抗压耐冲击。</span><span class="lang-en">High-strength rims for extreme environments.</span></p>
+                        </div>
+                    </div>
+                    <!-- Item 3: Steel -->
+                    <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="h-56 bg-gray-200">
+                            <img src="23.jpg" alt="Steel Materials" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=500&q=80'">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl mb-2"><span class="lang-zh">锻造圆钢及钢材</span><span class="lang-en">Forged Steel</span></h4>
+                            <p class="text-gray-500 text-sm"><span class="lang-zh">优质锻造工艺，广泛应用于重工业制造。</span><span class="lang-en">Premium forged steel for industrial manufacturing.</span></p>
+                        </div>
+                    </div>
+                    <!-- Item 4: Auxiliaries -->
+                    <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="h-56 bg-slate-100 flex items-center justify-center p-8">
+                            <i class="fa-solid fa-industry text-6xl text-slate-300"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl mb-2"><span class="lang-zh">炼铁辅料</span><span class="lang-en">Ironmaking Auxiliaries</span></h4>
+                            <p class="text-gray-500 text-sm"><span class="lang-zh">增碳剂、硅铁等优质炼铁添加剂。</span><span class="lang-en">Carburizer, ferrosilicon and high-quality additives.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Precision Machinery -->
+            <div class="mb-20">
+                <div class="flex items-center mb-10 border-l-8 border-blue-600 pl-6">
+                    <h3 class="text-3xl font-black text-blue-600">
+                        <span class="lang-zh">02 精密数控设备</span><span class="lang-en">02 CNC Machinery</span>
+                    </h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Item 5: CNC -->
+                    <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 lg:col-span-2">
+                        <div class="h-72 bg-gray-200">
+                            <img src="24.jpg" alt="CNC Machines" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?auto=format&fit=crop&w=1000&q=80'">
+                        </div>
+                        <div class="p-8">
+                            <h4 class="font-bold text-2xl mb-4"><span class="lang-zh">数控机床系列</span><span class="lang-en">CNC Machine Tools</span></h4>
+                            <p class="text-gray-600"><span class="lang-zh">包括高精度磨床、铣床等先进数控设备，满足严苛加工需求。</span><span class="lang-en">Including high-precision grinders and milling machines for advanced processing.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Tech & Sports -->
+            <div>
+                <div class="flex items-center mb-10 border-l-8 border-green-600 pl-6">
+                    <h3 class="text-3xl font-black text-green-700">
+                        <span class="lang-zh">03 科技与运动</span><span class="lang-en">03 Tech & Sports</span>
+                    </h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Item 6: SDR -->
+                    <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="h-56 bg-slate-50 flex items-center justify-center p-8">
+                            <i class="fa-solid fa-microchip text-6xl text-blue-400"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl mb-2">ADALM-PLUTO SDR</h4>
+                            <p class="text-gray-500 text-sm"><span class="lang-zh">便携式SDR开发板，科研与无线电开发首选。</span><span class="lang-en">Portable SDR board for research & development.</span></p>
+                        </div>
+                    </div>
+                    <!-- Item 7: Padel -->
+                    <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="h-56 bg-gray-200">
+                            <img src="25.jpg" alt="Padel Racket" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1616149174640-621816e811c7?auto=format&fit=crop&w=500&q=80'">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl mb-2"><span class="lang-zh">Padel 球拍</span><span class="lang-en">Padel Rackets</span></h4>
+                            <p class="text-gray-500 text-sm"><span class="lang-zh">专业设计，极致手感，风靡全球的板式网球拍。</span><span class="lang-en">Professional design for ultimate control.</span></p>
+                        </div>
+                    </div>
+                    <!-- Item 8: Tennis -->
+                    <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="h-56 bg-gray-200">
+                            <img src="26.jpg" alt="Tennis Balls" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1551773188-0801da12ddae?auto=format&fit=crop&w=500&q=80'">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl mb-2"><span class="lang-zh">网球</span><span class="lang-en">Tennis Balls</span></h4>
+                            <p class="text-gray-500 text-sm"><span class="lang-zh">高回弹、长寿命专业级网球。</span><span class="lang-en">High-rebound and long-life tennis balls.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-blue-900 rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:row-span-2 lg:flex-row">
+                <div class="p-12 lg:p-20 lg:w-1/2 text-white">
+                    <h2 class="text-4xl font-bold mb-10">
+                        <span class="lang-zh">开启合作之旅</span><span class="lang-en">Get In Touch</span>
+                    </h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-800 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold mb-1 text-blue-300"><span class="lang-zh">邮件咨询</span><span class="lang-en">Email</span></h5>
+                                <p class="text-xl">tianjindanew@163.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-800 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold mb-1 text-blue-300"><span class="lang-zh">公司地址</span><span class="lang-en">Address</span></h5>
+                                <p class="text-lg">
+                                    <span class="lang-zh">中国 · 天津市</span>
+                                    <span class="lang-en">Tianjin, China</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-16 pt-10 border-t border-blue-800">
+                        <p class="text-blue-300 italic">
+                            <span class="lang-zh">"致力于为全球客户提供一站式贸易解决方案。"</span>
+                            <span class="lang-en">"Dedicated to providing one-stop trading solutions for global clients."</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="p-12 lg:p-20 lg:w-1/2 bg-gray-50">
+                    <form id="contactForm" onsubmit="event.preventDefault(); showMessage();" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2"><span class="lang-zh">姓名</span><span class="lang-en">Full Name</span></label>
+                                <input type="text" class="w-full px-5 py-3 bg-white border border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition" placeholder="John Doe" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2"><span class="lang-zh">联系方式</span><span class="lang-en">Contact Info</span></label>
+                                <input type="text" class="w-full px-5 py-3 bg-white border border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition" placeholder="Email/WhatsApp" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2"><span class="lang-zh">产品需求</span><span class="lang-en">Your Inquiry</span></label>
+                            <textarea rows="5" class="w-full px-5 py-3 bg-white border border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-100 focus:border-blue-600 outline-none transition" placeholder="Please describe your needs..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition shadow-lg shadow-blue-200">
+                            <span class="lang-zh">提交询盘</span><span class="lang-en">Send Inquiry</span>
+                        </button>
+                    </form>
+                    <div id="successMsg" class="hidden h-full flex flex-col items-center justify-center text-center py-10">
+                        <div class="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-check text-4xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                            <span class="lang-zh">提交成功！</span>
+                            <span class="lang-en">Sent Successfully!</span>
+                        </h3>
+                        <p class="text-gray-500">
+                            <span class="lang-zh">我们会尽快联系您。</span>
+                            <span class="lang-en">We will get back to you shortly.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-slate-900 text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <span class="text-2xl font-bold text-white block mb-6">TIANJIN DANEW</span>
+                    <p class="text-sm leading-relaxed">
+                        <span class="lang-zh">深耕外贸多年，致力于中国制造与全球需求的完美对接。</span>
+                        <span class="lang-en">Years of experience in foreign trade, connecting Chinese manufacturing with global demand.</span>
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 underline decoration-blue-600 underline-offset-8"><span class="lang-zh">快速链接</span><span class="lang-en">Quick Links</span></h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#about" class="hover:text-blue-400 transition">About Us</a></li>
+                        <li><a href="#products" class="hover:text-blue-400 transition">Products</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 underline decoration-blue-600 underline-offset-8"><span class="lang-zh">官方邮箱</span><span class="lang-en">Support</span></h4>
+                    <p class="text-sm mb-4">tianjindanew@163.com</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 text-center text-xs tracking-widest">
+                <p>
+                    <span class="lang-zh">© 2024 天津大牛国际贸易有限公司 版权所有</span>
+                    <span class="lang-en">© 2024 Tianjin DANEW Int'l Trade Co., Ltd. All Rights Reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLang() {
+            document.body.classList.toggle('active-lang-en');
+            const isEn = document.body.classList.contains('active-lang-en');
+            document.documentElement.lang = isEn ? 'en' : 'zh-CN';
+        }
+
+        function showMessage() {
+            document.getElementById('contactForm').classList.add('hidden');
+            document.getElementById('successMsg').classList.remove('hidden');
+            setTimeout(() => {
+                document.getElementById('contactForm').classList.remove('hidden');
+                document.getElementById('successMsg').classList.add('hidden');
+                document.getElementById('contactForm').reset();
+            }, 4000);
+        }
+    </script>
+</body>
+</html>
