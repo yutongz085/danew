@@ -367,19 +367,11 @@
     </footer>
 
     <script>
-        function toggleLang() {
-            document.body.classList.toggle('active-lang-en');
-            const isEn = document.body.classList.contains('active-lang-en');
-            document.documentElement.lang = isEn ? 'en' : 'zh-CN';
-        }
-
-                    document.getElementById('successMsg').classList.remove('hidden');
-            setTimeout(() => {
-                document.getElementById('contactForm').classList.remove('hidden');
-                document.getElementById('successMsg').classList.add('hidden');
-                document.getElementById('contactForm').reset();
-            }, 4000);
-        }
-    </script>
+    function toggleLang() {
+        document.body.classList.toggle('active-lang-en');
+        const isEn = document.body.classList.contains('active-lang-en');
+        document.documentElement.lang = isEn ? 'en' : 'zh-CN';
+    }
+</script>
 </body>
 </html>
